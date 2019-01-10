@@ -1,0 +1,7 @@
+p(class='footer') I'm a footer
+ul
+  each val, index in ['https://google.com', 'https://bing.com', 'https://duckduckgo.com']
+    li
+      p 
+        | link #{index}: 
+        a(href=val) #{val}

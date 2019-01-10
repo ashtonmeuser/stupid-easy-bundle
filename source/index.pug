@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+  head
+    title My Bundled Project
+    link(rel='stylesheet', href='index.less')
+  body
+    include partials/header.pug
+    p(class='hello') hello!
+    p
+      a(href='/page2.pug') Page 2 
+    p
+      - var pageNum = '3';
+      a(href='/page' + pageNum + '.pug') Page #{pageNum}
+    include partials/footer.pug

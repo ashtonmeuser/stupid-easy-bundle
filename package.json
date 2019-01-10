@@ -1,0 +1,17 @@
+{
+  "name": "stupid-easy-bundle",
+  "version": "1.0.0",
+  "description": "Simple implementation of Pug templating and LESS styling bundled using Parcel.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel source/index.pug",
+    "build": "parcel build source/index.pug -d dist"
+  },
+  "author": "Ashton Meuser",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "parcel-bundler": "^1.11.0",
+    "pug": "^2.0.3"
+  }
+}
