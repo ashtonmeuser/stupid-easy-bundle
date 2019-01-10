@@ -219,9 +219,13 @@ Using Pug allows us to iterate over data rather than rewriting verbose HTML. Let
 Add the following to the end of the `footer.pug` file.
 
 ```
+p(class='footer') I'm a footer
 ul
-  each val, index in ['google.com', 'bing.com', 'duckduckgo.com']
-    li= 'link ' + index + ': ' + a(href=val) val
+  each val, index in ['https://google.com', 'https://bing.com', 'https://duckduckgo.com']
+    li
+      p
+        | link #{index}:
+        a(href=val) #{val}
 ```
 
 The above list is formed of the elements of an array. The object to iterate over is a plain JavaScript object, and can therefore be an array variable, the result of a function call, or any other JavaScript structure that can be iterated over.

@@ -1,7 +1,7 @@
 {
   "name": "stupid-easy-bundle",
   "version": "1.0.0",
-  "description": "Simple implementation of Pug templating and LESS styling bundled using Parcel.",
+  "description": "Simple implementation of Pug templating and LESS styling bundled using Parcel",
   "main": "index.js",
   "scripts": {
     "dev": "parcel source/index.pug",
